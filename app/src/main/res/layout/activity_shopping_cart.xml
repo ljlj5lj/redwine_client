@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.lj.redwine.activity.ShoppingCartActivity">
+    <include layout="@layout/topbar_back_text"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"/>
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/shopping_cart_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp">
+        <ListView
+            android:id="@+id/shopping_cart_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+    <include layout="@layout/shopping_cart_bottom_bar"
+        android:layout_height="60dp"
+        android:layout_width="match_parent" />
+</LinearLayout>

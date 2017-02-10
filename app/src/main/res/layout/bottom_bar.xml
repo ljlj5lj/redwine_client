@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/bottom_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        >
+        <LinearLayout
+            android:id="@+id/red_wine_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerVertical="true"
+            android:paddingTop="3dp"
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/red_wine"
+                android:layout_width="35dp"
+                android:layout_height="30dp"
+                android:background="@drawable/redwine_unselected"
+                android:layout_gravity="center_horizontal" />
+            <TextView
+                android:id="@+id/text_red_wine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="红酒"
+                android:textColor="@color/grey" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/order_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerVertical="true"
+            android:paddingTop="3dp"
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/order"
+                android:layout_width="28dp"
+                android:layout_height="30dp"
+                android:background="@drawable/order_unselected"
+                android:layout_gravity="center_horizontal" />
+            <TextView
+                android:id="@+id/text_order"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="订单"
+                android:textColor="@color/grey" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/new_product_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerVertical="true"
+            android:paddingTop="3dp"
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/new_product"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/new_product_unselected"
+                android:layout_gravity="center_horizontal" />
+            <TextView
+                android:id="@+id/text_new_product"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="新品"
+                android:textColor="@color/grey" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/person_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerVertical="true"
+            android:paddingTop="3dp"
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/person"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/person_unselected"
+                android:layout_gravity="center_horizontal" />
+            <TextView
+                android:id="@+id/text_person"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="个人"
+                android:textColor="@color/grey" />
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

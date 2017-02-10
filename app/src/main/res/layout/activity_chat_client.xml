@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.lj.redwine.activity.ChatClientActivity">
+    <include layout="@layout/topbar_back_text"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"/>
+    <ScrollView
+        android:id="@+id/svChat"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <EditText
+            android:layout_margin="10dp"
+            android:id="@+id/etDetails"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="18dp"
+            android:lineSpacingExtra="8dp"
+            android:background="@null"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"/>
+    </ScrollView>
+    <LinearLayout
+        android:layout_gravity="center"
+        android:background="@color/lightgrey"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <EditText
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:singleLine="true"
+            android:layout_gravity="center"
+            android:background="@drawable/shape_message"
+            android:id="@+id/message"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="6" />
+        <Button
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:id="@+id/send"
+            android:textColor="@color/white"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:background="@drawable/btn_code"
+            android:text="发送"
+            android:textSize="16sp" />
+    </LinearLayout>
+</LinearLayout>

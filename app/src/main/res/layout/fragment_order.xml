@@ -1,0 +1,29 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lj.redwine.fragment.OrderFragment">
+    <LinearLayout
+        android:background="@color/lightgrey"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!--订单栏-->
+        <include layout="@layout/topbar_order"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"/>
+
+        <!--下拉刷新控件-->
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/order_refresh_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <!--订单列表-->
+            <com.example.lj.redwine.custom_widget.recyclerView.RefreshRecyclerView
+                android:id="@+id/order_list_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+    </LinearLayout>
+</FrameLayout>

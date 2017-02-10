@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="50dp"
+    android:background="@android:color/transparent"
+    android:gravity="center" >
+
+    <LinearLayout
+        android:id="@+id/help_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@drawable/rounded_help_title" >
+        <TextView
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="支付帮助" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_below="@+id/help_title_layout"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_help_text">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/grey"
+            android:textSize="12sp"
+            android:text="货到付款:\n配送员送货上门，客户收单验货后，直接将货款交给配送员的一种结算方式。\n \n在线支付:\n进口红酒app为您提供的网上支付方式有中国银行、深圳发展银行、浦发银行、广发银行、上海银行、招商银行、中国农业银行、中国工商银行、中信银行、中国民生银行、交通银行、平安银行、中国光大银行、兴业银行、中国建设银行、支付宝、快钱。你的订单保留2小时，如果在规定时间内未收到您的货款，系统将自动取消订单。"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray"
+            android:textSize="12sp"
+            android:text="\n友情提示:\n1.请务必在汇款单上注明您的订单号和用户名。\n2.银行汇款到账通常需要2-4天，我们将在收到货款后的当日即刻为您发货。\n3.订单保留3天，如果在规定时间内未收到您的货款，系统将自动取消订单。\n4.如有疑问详询客服热线：13719109799。"/>
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/dialog_close"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/cancel" />
+
+</RelativeLayout>

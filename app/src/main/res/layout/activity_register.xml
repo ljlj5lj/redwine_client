@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.lj.redwine.activity.RegisterActivity">
+    <include layout="@layout/topbar_back_text"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"/>
+    <!--注册步骤栏-->
+    <LinearLayout
+        android:background="@color/lightgrey"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:id="@+id/register_tel_text"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="1.输入手机号码"
+            android:textColor="@color/main_color"/>
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@drawable/arrow"/>
+        <TextView
+            android:id="@+id/register_code_text"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="2.输入验证码"/>
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@drawable/arrow"/>
+        <TextView
+            android:id="@+id/register_pwd_text"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="3.设置密码"/>
+    </LinearLayout>
+    <!--注册步骤页面-->
+    <FrameLayout
+        android:id="@+id/register_frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

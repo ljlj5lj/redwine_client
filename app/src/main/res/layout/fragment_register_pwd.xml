@@ -1,0 +1,42 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lj.redwine.fragment.RegisterPwdFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/register_pwd_edit"
+                android:layout_margin="10dp"
+                android:layout_width="0dp"
+                android:layout_weight="5"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:hint="密码长度为6-10位之间"/>
+            <com.example.lj.redwine.custom_widget.switch_button.SwitchButton
+                android:layout_gravity="center"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:id="@+id/password_switch"
+                style="@style/SwitchButtonMD" />
+        </LinearLayout>
+        <Button
+            android:id="@+id/btn_register_pwd"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="提交信息"
+            android:textColor="@color/white"
+            android:background="@drawable/btn_code_green"/>
+    </LinearLayout>
+
+</FrameLayout>

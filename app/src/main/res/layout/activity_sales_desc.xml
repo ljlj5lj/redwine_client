@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.lj.redwine.activity.SalesDescActivity">
+    <include layout="@layout/topbar_back_text"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"/>
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/red_wine_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.example.lj.redwine.custom_widget.recyclerView.RefreshRecyclerView
+            android:id="@+id/red_wine_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>
