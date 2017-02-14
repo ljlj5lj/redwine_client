@@ -1,5 +1,5 @@
 # redwine_client
-红酒销售系统客户端
+红酒销售系统客户端（效果图）
 订单模块页面
 ![image](https://github.com/ljlj5lj/redwine_client/tree/master/introduction_png/1.png)
 红酒详情模块页面
